@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dicky's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1 CSS ONLY -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Dicky's Portfolio</h2>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Our Profile</a></li>
+                <li><a href="#message">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="section hero">
+        <h1 id="welcomeText">Hi, Name</h1>
+        <p>Welcome to our website</p>
+    </section>
+
+    <!-- PROFILE SECTION -->
+    <section id="profile" class="section">
+
+        <!-- PHOTO BANNER -->
+        <div class="banner">
+            <h1>Our Company</h1>
+        </div>
+
+        <!-- ABOUT -->
+        <div class="about">
+            <h2>About the Company</h2>
+            <p>
+                Our company provides IT services including technical support,
+                cybersecurity solutions, and web development services.
+            </p>
+        </div>
+
+        <!-- VISION & MISSION -->
+        <div class="vision-mission">
+            <h2>Vision</h2>
+            <p>
+                To become a trusted and innovative IT service provider.
+            </p>
+
+            <h2>Mission</h2>
+            <ul>
+                <li>Deliver high-quality IT solutions</li>
+                <li>Improve technology expertise continuously</li>
+                <li>Ensure customer satisfaction</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- MESSAGE US SECTION -->
+<section id="message" class="section">
+    <h2>Message Us</h2>
+
+    <div class="message-container">
+
+        <!-- LEFT SIDE (FORM) -->
+        <div class="message-left">
+<form id="messageForm">
+
+    <div class="form-row">
+        <label>Nama</label>
+        <input type="text" id="name" placeholder="Nama" required>
+    </div>
+
+    <div class="form-row">
+        <label>Tanggal Lahir</label>
+        <input type="date" id="birthdate" required>
+    </div>
+
+    <div class="form-row">
+        <label>Jenis Kelamin</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki</label>
+            <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <label>Pesan</label>
+        <textarea id="messageInput" placeholder="Pesan" required></textarea>
+    </div>
+
+    <div class="form-row button-row">
+        <label></label>
+        <button type="submit">Submit</button>
+    </div>
+
+</form>
+        </div>
+
+        <!-- RIGHT SIDE (OUTPUT) -->
+        <div class="message-right">
+            <div id="result"></div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- 1 JS ONLY -->
+    <script src="js/script.js"></script>
+</body>
+</html>
